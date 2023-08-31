@@ -110,6 +110,19 @@ ul.menu .menu-item a:hover::after {
     padding: 20px;
 }
 
+#hero .image-container {
+    width: 90%;
+    max-width: 686px;
+    margin: auto;
+}
+
+#hero .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
 #hero h1 {
     font-weight: 500;
     font-size: 2.5rem;
@@ -232,13 +245,11 @@ ul.menu .menu-item a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 40px;
     width: 100%;
 }
 
 #ad-video .video-container {
     width: 100%;
-    max-width: 600px;
     height: auto;
     display: flex;
     align-items: center;
@@ -296,59 +307,42 @@ ul.menu .menu-item a:hover::after {
 }
 
 /* contact section */
-
-
-/* footer */
-footer {
-    min-height: 300px;
-    background: var(--green);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-footer h1 {
-    text-align: center;
-    padding: 5px;
-}
-
-footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-footer .form-container {
+#contact .form-container {
     width: 50%;
     min-width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 5px;
+    margin: 20px auto;
+    background: #00000030;
+    padding: 20px;
+    border-radius: 7px;
+    backdrop-filter: blur(30px);
 }
 
-footer .form-container h3 {
+#contact .form-container h3 {
     font-family: montserrat, sans-serif;
     font-weight: 500;
     text-transform: capitalize;
     text-decoration: underline;
 }
 
-footer .form-container form {
+#contact .form-container form {
     width: 100%;
     display: grid;
     grid-template-columns: auto;
+    padding: 20px;
+    /* background: black; */
+    margin: 10px;
 }
 
-footer .form-container form .field {
+#contact .form-container form .field {
     width: 100%;
-    height: 35px;
+    height: 45px;
     /* background: black; */
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin: 4px auto;
@@ -356,7 +350,7 @@ footer .form-container form .field {
     overflow: hidden;
 }
 
-footer .form-container form .field .sm-field {
+#contact .form-container form .field .sm-field {
     width: 49%;
     min-width: 250px;
     height: 100%;
@@ -365,7 +359,7 @@ footer .form-container form .field .sm-field {
     overflow: hidden;
 }
 
-footer .form-container form .field input {
+#contact .form-container form .field input {
     width: 100%;
     height: 100%;
     font-family: montserrat, sans-serif;
@@ -375,9 +369,36 @@ footer .form-container form .field input {
     border: none;
 }
 
+/* footer */
+footer {
+    min-height: 100px;
+    background: var(--green);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer h3 {
+    text-align: center;
+    padding: 5px;
+    font-size: 1.7rem !important;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 footer ul.info {
     margin: 3px;
-    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 footer ul.info li {
@@ -385,7 +406,7 @@ footer ul.info li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    text-transform: lowercase;
+    margin: 4px;
 }
 
 footer ul.info li a {
@@ -395,4 +416,83 @@ footer ul.info li a {
 
 footer ul.info li i {
     margin: 3px;
+}
+
+footer ul.info li span {
+    margin: 2px;
+}
+
+footer ul.info li a:hover {
+    text-decoration: underline;
+}
+
+footer hr {
+    width: 70%;
+    color: white;
+    background: white;
+}
+
+/* CSS rules for XS screens */
+@media (max-width: 479px) {
+    header {
+        padding: 0 5px;
+    }
+
+    .menu {
+        display: grid;
+        grid-template-columns: auto;
+        position: absolute;
+        /* top: -1000px; */
+        left: 0;
+        width: 100%;
+        background: #0d0d0d;
+        padding: 30px 0;
+        transition: all 0.4s ease-in-out;
+        opacity: 0;
+    }
+
+    .drop-active {
+        top: 70px;
+        opacity: 1;
+        z-index: 999;
+    }
+
+    .menu-item {
+        margin: 20px auto;
+    }
+
+    .menu-item:hover {
+        color: red;
+        font-weight: 600;
+    }
+
+    .menu-toggle {
+        width: fit-content;
+        height: fit-content;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .bar {
+        width: 35px;
+        height: 3px;
+        background: black;
+        border-radius: 10px;
+        display: block;
+        margin: 6px auto;
+        transition: all ease-in-out 0.4s;
+    }
+
+    .toggle-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle-active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .toggle-active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
 }
