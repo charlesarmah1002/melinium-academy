@@ -26,17 +26,11 @@ body {
 }
 
 header {
-    /* width: 100vw; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
     height: 70px;
     background: white;
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 999;
 }
 
 .primary-navigation {
@@ -46,6 +40,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
 }
 
 .logo-container {
@@ -308,16 +305,15 @@ ul.menu .menu-item a:hover::after {
 
 /* contact section */
 #contact .form-container {
-    width: 50%;
-    min-width: 250px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     background: #00000030;
     padding: 20px;
-    border-radius: 7px;
+    /* border-radius: 7px; */
     backdrop-filter: blur(30px);
 }
 
@@ -339,6 +335,7 @@ ul.menu .menu-item a:hover::after {
 
 #contact .form-container form .field {
     width: 100%;
+    max-width: 600px;
     height: 45px;
     /* background: black; */
     display: flex;
@@ -352,7 +349,7 @@ ul.menu .menu-item a:hover::after {
 
 #contact .form-container form .field .sm-field {
     width: 49%;
-    min-width: 250px;
+    /* min-width: 250px; */
     height: 100%;
     background: white;
     border-radius: 4px;
@@ -433,37 +430,47 @@ footer hr {
 }
 
 /* CSS rules for XS screens */
-@media (max-width: 479px) {
-    header {
+@media (max-width: 769px) {
+    .primary-navigation {
         padding: 0 5px;
+        /* position: relative; */
     }
 
-    .menu {
-        display: grid;
-        grid-template-columns: auto;
+    ul.menu {
         position: absolute;
-        /* top: -1000px; */
-        left: 0;
+        top: -1000px;
         width: 100%;
-        background: #0d0d0d;
-        padding: 30px 0;
-        transition: all 0.4s ease-in-out;
-        opacity: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: 0.3s;
+        background: black;
+    }
+
+    ul.menu .menu-item {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+        padding: 5px;
+    }
+    
+    ul.menu .menu-item a {
+        padding: 5px;
+    }
+
+    ul.menu .menu-item a:hover::after {
+        width: 0;
+        display: none;
     }
 
     .drop-active {
-        top: 70px;
+        top: 100% !important;
         opacity: 1;
         z-index: 999;
-    }
-
-    .menu-item {
-        margin: 20px auto;
-    }
-
-    .menu-item:hover {
-        color: red;
-        font-weight: 600;
+        right: 0;
+        pointer-events: all;
     }
 
     .menu-toggle {
