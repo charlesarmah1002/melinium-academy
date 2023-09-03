@@ -151,28 +151,37 @@ ul.menu .menu-item a:hover::after {
     align-items: center;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    /* padding: 40px; */
+    /* background: black; */
+    position: relative;
+    min-height: 300px;
 }
 
 #intro .card-container {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-wrap: wrap;
+    height: 100%;
+    min-height: 300px;
+    width: 100%;
+    background: #00000070;
 }
 
 #intro .card {
-    min-height: 300px;
-    max-width: 300px;
+    width: 100%;
+    max-width: 400px;
     margin: 3px 10px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
-    padding: 10px;
-    background: #304e0640;
+    padding: 20px;
+    /* background: #f4f1f630; */
+    /* backdrop-filter: blur(30px); */
     border-radius: 7px;
+    color: white;
 }
 
 #intro .card h2 {
@@ -180,14 +189,45 @@ ul.menu .menu-item a:hover::after {
     text-transform: uppercase;
     font-size: 2rem;
     text-align: center;
+    margin: 5px;
 }
 
-#intro .card .image-container {
-    width: 150px;
-    height: 150px;
-    background: black;
-    margin: auto;
+#intro .background-video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
+
+#intro .background-video .video-container {
+    height: 100%;
+    width: 100%;
+}
+
+#intro .background-video .video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 
+#intro .card-container .card.mission {
+    background: var(--red);
+    color: white;
+}
+
+#intro .card-container .card.vision {
+    background: yellow;
+    color: black;
+}
+
+#intro .card-container .card.values {
+    background: var(--green);
+    color: white;
+} */
 
 /* testimonial section */
 #testimonials {
@@ -205,7 +245,7 @@ ul.menu .menu-item a:hover::after {
 }
 
 #testimonials .slider {
-    height: 400px;
+    min-height: 300px;
     width: 100%;
     background: transparent;
 }
@@ -220,9 +260,32 @@ ul.menu .menu-item a:hover::after {
     text-align: center;
     font-size: 18px;
     background: transparent;
-    display: flex;
+    height: 100%;
+    display: flex !important;
     justify-content: center;
     align-items: center;
+}
+
+.swiper-slide .content {
+    width: 70%;
+}
+
+.swiper-slide .content .name h3{
+    font-weight: 500;
+    font-family: montserrat;
+    margin: 10px;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.swiper-slide .content p {
+    margin: 20px;
+}
+
+.swiper-slide .content .date {
+    font-family: Poppins, sans-serif;
+    font-style: italic;
+    opacity: 0.7;
 }
 
 .swiper-slide img {
@@ -238,27 +301,7 @@ ul.menu .menu-item a:hover::after {
 }
 
 /* ad-video for promos and any vido content */
-#ad-video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
 
-#ad-video .video-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
-}
-
-#ad-video .video-container video {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
 
 /* about us section */
 #about {
@@ -455,7 +498,7 @@ footer hr {
         margin: 10px auto;
         padding: 5px;
     }
-    
+
     ul.menu .menu-item a {
         padding: 5px;
     }
