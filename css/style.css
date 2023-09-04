@@ -404,58 +404,6 @@ footer {
     flex-direction: column;
 }
 
-footer h3 {
-    text-align: center;
-    padding: 5px;
-    font-size: 1.7rem !important;
-}
-
-footer .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-footer ul.info {
-    margin: 3px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-footer ul.info li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin: 4px;
-}
-
-footer ul.info li a {
-    color: inherit;
-    text-decoration: none;
-}
-
-footer ul.info li i {
-    margin: 3px;
-}
-
-footer ul.info li span {
-    margin: 2px;
-}
-
-footer ul.info li a:hover {
-    text-decoration: underline;
-}
-
-footer hr {
-    width: 70%;
-    color: white;
-    background: white;
-}
-
 /* CSS rules for XS screens */
 @media (max-width: 769px) {
     .primary-navigation {
