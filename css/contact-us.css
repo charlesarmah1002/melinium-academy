@@ -1,0 +1,12 @@
+.title {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--red) url(../resources/full-length-studio-shot-two-women-taekwondo-athletes-training-isolated-black-background.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 2.5rem;
+}
