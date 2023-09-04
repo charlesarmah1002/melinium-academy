@@ -213,22 +213,6 @@ ul.menu .menu-item a:hover::after {
     object-position: center;
 }
 
-/* 
-#intro .card-container .card.mission {
-    background: var(--red);
-    color: white;
-}
-
-#intro .card-container .card.vision {
-    background: yellow;
-    color: black;
-}
-
-#intro .card-container .card.values {
-    background: var(--green);
-    color: white;
-} */
-
 /* testimonial section */
 #testimonials {
     display: flex;
