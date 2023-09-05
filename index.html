@@ -18,6 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="resources/fontawesome/css/all.css">
 </head>
 
 <body>
@@ -45,35 +48,44 @@
     </header>
     <main onclick="menuShut()">
         <section id="hero">
-            <div class="image-container">
-                <img src="resources/hero-img.png" alt="">
-            </div>
             <h1 class="gobold">Melinium Taekwando & Karate Academy</h1>
-            <p>Discover your best self at <strong>Millennium Taekwondo & Karate Academy</strong>, where tradition and modern mastery combine to enhance your strength and discipline.</p>
+            <p>Discover your best self at <strong>Millennium Taekwondo & Karate Academy</strong>, where tradition and
+                modern mastery combine to enhance your strength and discipline.</p>
+
         </section>
         <section id="intro">
-            <div class="background-video">
-                <div class="video-container">
-                    <video src="resources/Sleeping Dogs - Mixed Martial Arts Club.mp4" muted autoplay loop></video>
-                </div>
-            </div>
             <div class="card-container">
                 <div class="card mission">
                     <h2 class="gobold">Mission</h2>
-                    <p class="text">We empower individuals through Taekwondo and Karate, fostering physical strength, mental resilience, and strong character.</p>
+                    <p class="text">We empower individuals through Taekwondo and Karate, fostering physical strength,
+                        mental resilience, and strong character.</p>
                 </div>
                 <div class="card vision">
                     <h2 class="gobold">vision</h2>
-                    <p class="text">We aspire to be a martial arts center of excellence, nurturing skilled martial artists and exceptional individuals who carry the traditions and values of our disciplines into the world.</p>
+                    <p class="text">We aspire to be a martial arts center of excellence, nurturing skilled martial
+                        artists and exceptional individuals who carry the traditions and values of our disciplines into
+                        the world.</p>
                 </div>
                 <div class="card values">
                     <h2 class="gobold">values</h2>
-                    <p class="text">Our academy is built on values of respect, discipline, integrity, continuous improvement, and community.</p>
+                    <p class="text">Our academy is built on values of respect, discipline, integrity, continuous
+                        improvement, and community.</p>
                 </div>
             </div>
         </section>
         <section id="photos">
-            
+            <div class="image-container">
+                <img src="resources/1.jpg" alt="">
+            </div>
+            <div class="image-container">
+                <img src="resources/2.jpg" alt="">
+            </div>
+            <div class="image-container">
+                <img src="resources/3.jpg" alt="">
+            </div>
+            <div class="image-container">
+                <img src="resources/14.jpg" alt="">
+            </div>
         </section>
         <section id="testimonials">
             <h1 class="aunther-signature">testimonials</h1>
@@ -85,7 +97,10 @@
                                 <div class="name">
                                     <h3>Sarah Parker</h3>
                                 </div>
-                                <p>"Joining the academy was a life-changing decision for me. The values of respect and discipline I've learned here extend beyond the dojo. Thanks to the dedicated instructors, I've not only improved my martial arts skills but also gained a stronger sense of self-confidence."</p>
+                                <p>"Joining the academy was a life-changing decision for me. The values of respect and
+                                    discipline I've learned here extend beyond the dojo. Thanks to the dedicated
+                                    instructors, I've not only improved my martial arts skills but also gained a
+                                    stronger sense of self-confidence."</p>
                                 <p class="date">12th June, 2023</p>
                             </div>
                         </div>
@@ -94,7 +109,9 @@
                                 <div class="name">
                                     <h3>David Smith</h3>
                                 </div>
-                                <p>"I've trained in martial arts for years, and this academy stands out. The focus on integrity and continuous improvement is truly remarkable. I'm proud to be part of a community that values personal growth, both in and out of the training hall."</p>
+                                <p>"I've trained in martial arts for years, and this academy stands out. The focus on
+                                    integrity and continuous improvement is truly remarkable. I'm proud to be part of a
+                                    community that values personal growth, both in and out of the training hall."</p>
                                 <p class="date">12th June, 2023</p>
                             </div>
                         </div>
@@ -103,7 +120,10 @@
                                 <div class="name">
                                     <h3>Emily Chen</h3>
                                 </div>
-                                <p>"Enrolling at this academy was one of the best decisions I've made. The supportive community, top-notch instructors, and the emphasis on respect and discipline have not only honed my martial arts skills but also helped me become a more focused and balanced individual. I'm proud to call this academy my second home."</p>
+                                <p>"Enrolling at this academy was one of the best decisions I've made. The supportive
+                                    community, top-notch instructors, and the emphasis on respect and discipline have
+                                    not only honed my martial arts skills but also helped me become a more focused and
+                                    balanced individual. I'm proud to call this academy my second home."</p>
                                 <p class="date">12th June, 2023</p>
                             </div>
                         </div>
@@ -129,10 +149,10 @@
         <section id="contact">
             <div class="form-container">
                 <h3>sign up for a demo</h3>
-                <form action="">
+                <form action="" id="contact-form">
                     <div class="field">
                         <div class="sm-field">
-                            <input type="text" name="fname" id="lname" placeholder="First Name">
+                            <input type="text" name="fname" id="fname" placeholder="First Name">
                         </div>
                         <div class="sm-field">
                             <input type="text" name="lname" id="lname" placeholder="Last Name">
@@ -145,7 +165,7 @@
                         <input type="tel" name="phone" id="phone" placeholder="Phone">
                     </div>
                     <div class="field">
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" class="submitBtn">
                     </div>
                 </form>
             </div>
@@ -182,9 +202,35 @@
     </main>
     <footer>
         <div class="container">
-            <div class="sm-container">
-                <h1 class="sm">Melinium <br>Taekwando & Karate <br>Academy</h1>
-
+            <div class="column">
+                <h2>Melinium Taekwando & Karate Academy</h2>
+                <p>GA-464-6990</p>
+                <p>Sekyi Street </p>
+                <p>Nyamekye, Darkuman</p>
+                <p>Accra</p>
+            </div>
+            <div class="column">
+                <h4>Contacts</h4>
+                <ul class="contacts">
+                    <li><a href="mailto:meliniumtaekwandoandkarateacad@gmail.com"><i class="fa-solid fa-envelope"></i> Send Us An Email</a></li>
+                    <li>
+                        <ul>
+                            <li><a href="tel:+233530644335"><i class="fa-solid fa-phone"></i> +233 (0) 53 064 4335</a></li>
+                            <li><a href="tel:+233302453565"><i class="fa-solid fa-phone"></i> +233 (0) 30 245 3565</a></li>
+                            <li><a href="tel:+233242579624"><i class="fa-solid fa-phone"></i> +233 (0) 24 257 9624</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                <h4>Links</h4>
+                <ul class="links">
+                    <li class=""><a href="index.html">home</a></li>
+                    <li class=""><a href="">classes</a></li>
+                    <li class=""><a href="">testimonials</a></li>
+                    <li class=""><a href="contact-us.html">contacts</a></li>
+                    <li class=""><a href="">about us</a></li>
+                </ul>
             </div>
         </div>
     </footer>
@@ -217,6 +263,7 @@
 
     <!-- custom scripts -->
     <script src="js/dropdown.js"></script>
+    <!-- <script src="js/form.js"></script> -->
 </body>
 
 </html>
