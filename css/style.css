@@ -255,7 +255,8 @@ ul.menu .menu-item a:hover::after {
 }
 
 .swiper-slide .content {
-    width: 70%;
+    width: 89%;
+    max-width: 900px;
 }
 
 .swiper-slide .content .name h3{
@@ -395,6 +396,11 @@ ul.menu .menu-item a:hover::after {
     font-weight: 500;
     outline: none;
     border: none;
+}
+
+#contact .form-container form .field input.submitBtn {
+    background: var(--green);
+    color: white;
 }
 
 /* footer */
