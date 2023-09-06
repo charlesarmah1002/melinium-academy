@@ -101,7 +101,7 @@ ul.menu .menu-item a:hover::after {
 
 /* hero section */
 #hero {
-    background: #00000030 url(../resources/12.jpg);
+    background: #00000050 url(../resources/12.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
