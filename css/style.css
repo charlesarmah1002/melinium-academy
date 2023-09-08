@@ -314,7 +314,7 @@ ul.menu .menu-item a:hover::after {
 
 #about .image-container {
     width: 90%;
-    height: auto;
+    height: 200px;
     max-width: 300px;
     background: black;
 }
@@ -335,6 +335,7 @@ ul.menu .menu-item a:hover::after {
 #about .lm-button {
     background: var(--green);
     color: var(--white);
+    margin-top: 10px;
 }
 
 /* contact section */
