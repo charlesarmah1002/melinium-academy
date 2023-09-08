@@ -139,25 +139,7 @@
     box-shadow: 2px 2px 5px 0;
     border-radius: 5px;
     overflow: hidden;
-    -webkit-animation-name: move;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: left;
-    -webkit-animation-timing-function: linear;
 }
-
-#staff .staff-card:hover {
-    -webkit-animation-play-state: paused;
-}
-
-@-webkit-keyframes move {
-    0% {
-        scroll-padding-right: 20px;
-    }
-    100% {
-
-    }
-  }
 
 #staff .staff-card::after {
     width: 100%;
