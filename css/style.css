@@ -489,6 +489,7 @@ footer .container .column p {
         justify-content: center !important;
         transition: 0.3s;
         background: black;
+        z-index: 999;
     }
 
     ul.menu .menu-item {
