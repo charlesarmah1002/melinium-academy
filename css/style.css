@@ -475,6 +475,7 @@ footer .container .column p {
 @media (max-width: 769px) {
     .primary-navigation {
         padding: 0 5px;
+        z-index: 999;
         /* position: relative; */
     }
 
