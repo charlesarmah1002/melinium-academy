@@ -499,6 +499,7 @@ footer .container .column p {
         transition: 0.3s;
         background: black;
         z-index: 999;
+        height: 250px;
     }
 
     ul.menu .menu-item {
@@ -534,12 +535,12 @@ footer .container .column p {
     }
 
     .bar {
-        width: 35px;
+        width: 30px;
         height: 3px;
         background: black;
         border-radius: 10px;
         display: block;
-        margin: 6px auto;
+        margin: 4px auto;
         transition: all ease-in-out 0.4s;
     }
 
@@ -548,10 +549,10 @@ footer .container .column p {
     }
 
     .toggle-active .bar:nth-child(1) {
-        transform: translateY(9px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
     }
 
     .toggle-active .bar:nth-child(3) {
-        transform: translateY(-9px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
     }
 }
