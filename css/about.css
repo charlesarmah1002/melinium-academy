@@ -1,17 +1,10 @@
-#academy h1 {
-    font-size: 2rem;
-    font-weight: 400;
-    text-transform: uppercase;
-
-}
-
 #academy .video-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     width: 100%;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: auto;
 }
 
@@ -56,28 +49,14 @@
     border-radius: 50%;
 }
 
-#academy .paragraph {
-    width: 100%;
-    max-width: 600px;
+#academy .paragraph h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#academy .paragraph hr {
+    width: 50px;
     margin: auto;
-    font-size: 1.1rem;
-}
-
-#academy .paragraph p {
-    margin: 5px 0;
-    padding: 0 5px;
-}
-
-#academy .paragraph p img {
-    width: 50%;
-    max-width: 300px;
-    margin: 4px;
-}
-
-#academy .paragraph p img.one {
-    float: right;
-}
-
-#academy .paragraph p img.two {
-    float: left;
 }
