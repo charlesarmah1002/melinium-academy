@@ -4,7 +4,7 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    /* max-width: 600px; */
+    max-width: 600px;
     margin: auto;
 }
 
@@ -49,6 +49,13 @@
     border-radius: 50%;
 }
 
+#academy .paragraph {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 10px;
+}
+
 #academy .paragraph h1 {
     font-size: 2rem;
     font-weight: 400;
@@ -59,4 +66,10 @@
 #academy .paragraph hr {
     width: 50px;
     margin: auto;
+}
+
+#academy .paragraph p {
+    font-weight: 300;
+    text-align: justify;
+    padding: 20px;
 }
