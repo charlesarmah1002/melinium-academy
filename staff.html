@@ -10,7 +10,6 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact-us.css">
 
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -39,42 +38,21 @@
             </div>
             <ul class="menu">
                 <li class="menu-item"><a href="index.html">home</a></li>
-                <li class="menu-item"><a href="">our staff</a></li>
-                <li class="menu-item"><a href="">contacts</a></li>
-                <li class="menu-item"><a href="">about us</a></li>
+                <li class="menu-item"><a href="staff.html">our staff</a></li>
+                <li class="menu-item"><a href="contact-us.html">contacts</a></li>
+                <li class="menu-item"><a href="about.html">about us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="map">
-            <div class="map-container">
-                <div class="mapouter">
-                    <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
-                            marginheight="0" marginwidth="0"
-                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=5.601802372120709, -0.2574533690057428&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                            href="https://gachanymph.com/">Gacha Nymph APK</a></div>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            width: 100%;
-                            height: 400px;
-                        }
+        <section>
+            <h1 style="text-align: center;">Our Staff</h1>
+            <div class="container">
 
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            width: 100%;
-                            height: 400px;
-                        }
-
-                        .gmap_iframe {
-                            height: 400px !important;
-                        }
-                    </style>
-                </div>
             </div>
-        </div>
+        </section>
+    </main>
+    <footer>
         <div class="container">
             <div class="column">
                 <h2>Melinium Taekwando & Karate Academy</h2>
@@ -100,29 +78,41 @@
                     </li>
                 </ul>
             </div>
+            <div class="column">
+                <h4>Links</h4>
+                <ul class="links">
+                    <li class=""><a href="index.html">home</a></li>
+                    <li class=""><a href="">classes</a></li>
+                    <li class=""><a href="contact-us.html">contacts</a></li>
+                    <li class=""><a href="">about us</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="form-container">
-            <h3>Send Us A Message</h3>
-            <form action="">
-                <div class="field">
-                    <div class="sm-field">
-                        <input type="text" name="name" id="name" placeholder="Name">
-                    </div>
-                    <div class="sm-field">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                    </div>
-                </div>
-                <div class="field message">
-                    <textarea name="" id="" placeholder="Message"></textarea>
-                </div>
-                <div class="field button">
-                    <button>Send Message</button>
-                </div>
-            </form>
-        </div>
-    </main>
+    </footer>
 
-    
+    <!-- swiper js script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/655ab35400.js" crossorigin="anonymous"></script>
 
