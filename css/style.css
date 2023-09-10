@@ -27,6 +27,11 @@ body {
     background: var(--white);
 }
 
+p {
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
 main {
     min-height: 550px;
 }
@@ -554,5 +559,9 @@ footer .container .column p {
 
     .toggle-active .bar:nth-child(3) {
         transform: translateY(-7px) rotate(-45deg);
+    }
+
+    p {
+        font-size: 1.05rem;
     }
 }
