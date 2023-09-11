@@ -406,9 +406,17 @@ ul.menu .menu-item a:hover::after {
     border: none;
 }
 
-#contact .form-container form .field input.submitBtn {
+#contact .form-container form .field button.submitBtn {
     background: var(--green);
     color: white;
+    outline: none;
+    border: none;
+    margin-left: auto;
+    height: 100%;
+    width: 150px;
+    border-radius: 4px;
+    font-family: montserrat, sans-serif;
+    cursor: pointer;
 }
 
 /* footer */
