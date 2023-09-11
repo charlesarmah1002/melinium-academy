@@ -16,8 +16,8 @@ button.addEventListener('click', (e)=>{
         phone: phone
     }
 
-    console.log(formData.firstName)
-    window.alert(formData.firstName)
+    // console.log(formData.firstName)
+    // window.alert(formData.firstName)
 
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -28,6 +28,8 @@ button.addEventListener('click', (e)=>{
         Subject : "This is the subject",
         Body : `${formData.firstName} sent this email`
     }).then(
-      message => alert(message)
+    //   message => alert(message)
     );
+
+    confirm('Do you want to Subscribe for our monthly email');
 })
