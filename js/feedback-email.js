@@ -14,5 +14,6 @@ submitBtn.addEventListener('click', (e)=>{
         feedback: feedback
     }
 
-    console.log(formData)
+    window.alert(formData.name);
+    location.reload();
 })

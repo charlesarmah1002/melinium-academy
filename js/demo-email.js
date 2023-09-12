@@ -14,14 +14,11 @@ button.addEventListener('click', () => {
         phone: phone
     }
 
-    // console.log(formData.firstName)
-    // window.alert(formData.firstName)
-
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "kharlregardlessarmah@gmail.com",
         Password: "B5DF47DF6AA28F06A598B5C72A19A511CE2D",
-        To: 'charlesarmah.dev@gmail.com',
+        To: `${formData.email}`,
         From: "charlesarmah.dev@gmail.com",
         Subject: "New Demo Request",
         Body: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title></title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"><style type="text/css">body, html { margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; text-size-adjust: none; width: 100% !important; }table td, table { }#outlook a { padding: 0px; }.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }.ExternalClass { width: 100%; }@media only screen and (max-width: 480px) {
@@ -38,5 +35,4 @@ button.addEventListener('click', () => {
         );
         
         confirm('Do you want to Subscribe for our monthly email');
-        reload();
 })
