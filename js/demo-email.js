@@ -2,8 +2,8 @@ const form = document.getElementById('form-container')
 
 const button = document.querySelector('.submitBtn');
 
-button.addEventListener('click', (e)=>{
-    e.preventDefault(); 
+button.addEventListener('click', ()=>{
+    // e.preventDefault(); 
     const fname = document.getElementById('fname').value;
     const lname = document.getElementById('lname').value;
     const email = document.getElementById('email').value;
@@ -26,10 +26,10 @@ button.addEventListener('click', (e)=>{
         To : 'charlesarmah.dev@gmail.com',
         From : "charlesarmah.dev@gmail.com",
         Subject : "New Demo Request",
-        Body : `${formData.firstName} ${formData.lastName} has registered for a demo. 
+        Body : `${formData.firstName} ${formData.lastName} has registered for a demo. <br>
         Email: ${formData.email} and Phone: ${formData.phone}`
     }).then(
-    //   message => alert(message)
+      message => alert(message)
     );
 
     confirm('Do you want to Subscribe for our monthly email');
