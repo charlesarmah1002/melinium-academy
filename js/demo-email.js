@@ -25,8 +25,9 @@ button.addEventListener('click', (e)=>{
         Password : "B5DF47DF6AA28F06A598B5C72A19A511CE2D",
         To : 'charlesarmah.dev@gmail.com',
         From : "charlesarmah.dev@gmail.com",
-        Subject : "This is the subject",
-        Body : `${formData.firstName} sent this email`
+        Subject : "New Demo Request",
+        Body : `${formData.firstName} ${formData.lastName} has registered for a demo. 
+        Email: ${formData.email} and Phone: ${formData.phone}`
     }).then(
     //   message => alert(message)
     );
