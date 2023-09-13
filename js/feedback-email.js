@@ -14,6 +14,15 @@ submitBtn.addEventListener('click', (e)=>{
         feedback: feedback
     }
 
-    window.alert(formData.name);
-    location.reload();
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "kharlregardlessarmah@gmail.com",
+        Password: "B5DF47DF6AA28F06A598B5C72A19A511CE2D",
+        To: `${formData.email}`,
+        From: "charlesarmah.dev@gmail.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
 })
