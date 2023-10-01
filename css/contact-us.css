@@ -148,3 +148,13 @@ h2.page-title {
 .container .column p {
     margin: 4px 0;
 }
+
+.socials li i {
+    background: #00000020 !important;
+}
+
+i
+
+i:hover {
+    background: #00000050 !important;
+}

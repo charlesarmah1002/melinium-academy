@@ -25,6 +25,7 @@
 body {
     font-family: montserrat;
     background: var(--white);
+    cursor: default;
 }
 
 p {
@@ -485,6 +486,28 @@ footer .container .column .links li {
 
 footer .container .column p {
     margin: 4px 0;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    font-size: 1.3rem;
+}
+
+.socials i {
+    padding: 10px;
+    background: #faf9f620;
+    backdrop-filter: blur(20px);
+    border-radius: 3px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.socials i:hover {
+    background: #faf9f670;
 }
 
 /* CSS rules for XS screens */
